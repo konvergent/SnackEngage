@@ -82,7 +82,7 @@ public class AfterNumberOfOpportunities implements SnackCondition {
 
 you can also have a custom snack with an image added:
 
-![rate screenshot](doc/screenshots/with_icon.png)
+![rate screenshot](doc/screenshots/with_icon_small.png)
 
 ```java
 .withSnack(new OpenURLSnack("market://details?id=org.ligi.survivalmanual", "survival") {
@@ -96,7 +96,8 @@ you can also have a custom snack with an image added:
     textView.setCompoundDrawablePadding(getResources().getDimensionPixelOffset(R.dimen.rhythm));
     return snackbar;
   }
-}
+}.overrideTitleText("Other App by ligi:\nFree Offline Survival Guide")
+ .overrideActionText("Get It!")
 ```
 
 ### Hints
